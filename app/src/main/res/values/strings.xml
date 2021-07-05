@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">NetFlixClone</string>
+    <string name="e_mail">e-mail</string>
+    <string name="senha">senha</string>
+    <string name="bt_entrar">Entrar</string>
+    <string name="precisa_de_ajuda">Precisa de ajuda?</string>
+    <string name="novo_por_aqui_inscreva_se_agora">Novo por aqui? Inscreva-se agora.</string>
+    <string name="texto_assinatura">Informe seu e-mail e senha \npara iniciar a assinatura</string>
+    <string name="crie_sua_conta">Crie sua conta.</string>
+    <string name="cadastrar">Cadastrar</string>
 </resources>
