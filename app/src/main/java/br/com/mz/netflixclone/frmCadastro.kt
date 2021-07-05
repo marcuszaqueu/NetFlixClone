@@ -1,9 +1,8 @@
 package br.com.mz.netflixclone
 
 import android.annotation.SuppressLint
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import br.com.mz.netflixclone.databinding.ActivityFrmCadastroBinding
 
 class frmCadastro : AppCompatActivity() {
@@ -33,6 +32,7 @@ class frmCadastro : AppCompatActivity() {
 
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private fun Toolbar(){
         val toolbar = binding.toolbarCadastro
         toolbar.setBackgroundColor(getColor(R.color.white))
