@@ -31,7 +31,7 @@ class frmCadastro : AppCompatActivity() {
             val mensagem_erro = binding.mensagemErro
 
             if(email.isEmpty() || senha.isEmpty()){
-                mensagem_erro.setText("Preencha todos os campos")
+                mensagem_erro.setText(getString(R.string.erroCamposVazios))
             }else{
                 mensagem_erro.setText("")
                 CadastrarUsuario()
@@ -48,7 +48,7 @@ class frmCadastro : AppCompatActivity() {
 
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,senha).addOnCompleteListener {
             if(it.isSuccessful){
-                Toast.makeText(this,"Usuário cadastrado com sucesso!",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,getString(R.string.cadastroUsuarioSucesso),Toast.LENGTH_SHORT).show()
                 binding.cadEmail.setText("")
                 binding.cadSenha.setText("")
                 mensagem_erro.setText("")
@@ -57,11 +57,11 @@ class frmCadastro : AppCompatActivity() {
             var erro = it
 
             when{
-                erro is FirebaseAuthWeakPasswordException -> mensagem_erro.setText("A senha deve possuir no minimo \n6 carecteres!")
-                erro is FirebaseAuthUserCollisionException -> mensagem_erro.setText("Este em-mail já existe!")
-                erro is FirebaseAuthEmailException -> mensagem_erro.setText("Digite um e-mail válido!")
-                erro is FirebaseNetworkException -> mensagem_erro.setText("Verifique sua conexão de internet!")
-                else -> mensagem_erro.setText("Erro ao cadastrar usuário!")
+                erro is FirebaseAuthWeakPasswordException -> mensagem_erro.setText(getString(R.string.minimoSenha))
+                erro is FirebaseAuthUserCollisionException -> mensagem_erro.setText(getString(R.string.emailJaCadastrado))
+                erro is FirebaseAuthEmailException -> mensagem_erro.setText(getString(R.string.emailInvalido))
+                erro is FirebaseNetworkException -> mensagem_erro.setText(getString(R.string.falhaInternet))
+                else -> mensagem_erro.setText(getString(R.string.erroCadUsuario))
             }
 
 

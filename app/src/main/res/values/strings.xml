@@ -5,7 +5,18 @@
     <string name="bt_entrar">Entrar</string>
     <string name="precisa_de_ajuda">Precisa de ajuda?</string>
     <string name="novo_por_aqui_inscreva_se_agora">Novo por aqui? Inscreva-se agora.</string>
-    <string name="texto_assinatura">Informe seu e-mail e senha \npara iniciar a assinatura</string>
+    <string name="texto_assinatura">Informe seu e-mail e senha \n para iniciar a assinatura</string>
     <string name="crie_sua_conta">Crie sua conta.</string>
     <string name="cadastrar">Cadastrar</string>
+    <string name="erroCamposVazios">Preencha todos os campos</string>
+    <string name="cadastroUsuarioSucesso">Usuário cadastrado com sucesso!</string>
+    <string name="minimoSenha">A senha deve possuir no minimo \n 6 carecteres!</string>
+    <string name="emailJaCadastrado">Este em-mail já existe!</string>
+    <string name="emailInvalido">Digite um e-mail válido!</string>
+    <string name="falhaInternet">Verifique sua conexão de internet!</string>
+    <string name="erroCadUsuario">Erro ao cadastrar usuário!</string>
+    <string name="LoginSucesso">Login efetuado com sucesso!</string>
+    <string name="emailSenhaInvalido">e-mail ou senha inválido</string>
+    <string name="erroLogar">Erro ao logar!</string>
+    <string name="menuLogoff">Logoff</string>
 </resources>
